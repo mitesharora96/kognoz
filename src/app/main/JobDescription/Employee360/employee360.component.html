@@ -1,0 +1,26 @@
+<div class='mainRow'>
+
+    <div class="empList">
+        <ul>
+             <li *ngFor="let e of employee">
+                 
+                        <h2>{{e.name}}</h2>
+                        <h3>{{e.position}}</h3>
+                        <p>Department : {{e.Department}}</p>
+                        <p>Location: {{e.Location}}</p>
+                        <p>Date of Joining: {{e.join_date}} </p>
+                  
+            </li>   
+
+        </ul>
+
+
+    </div>
+    
+    <div class="empFilter">
+        <p>Select Department</p>
+        <input type="text" placeholder="All">
+    </div>
+
+
+</div>

@@ -1,0 +1,38 @@
+header {
+    padding: 10px;
+    text-align: left;
+    background: #0e0250;
+    color: rgb(56, 43, 236);
+  }
+
+
+  header input{
+    padding : 16px 16px;
+    border-style: outset;
+  }
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sideNavBar {
+    flex: 25%;
+    background-color: #f1f1f1;
+    padding:0;
+  }
+
+  .main {
+    flex: 75%;
+    background-color: rgb(139, 133, 133);
+    padding: 20px;
+  }
+
+  footer {
+    padding: 3px;
+    text-align: center;
+    background: #0e0250;;
+  }
+
+
+
+

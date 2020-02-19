@@ -1,0 +1,23 @@
+<table>
+    <tr>
+        <th>Job ID </th>
+        <th>Title</th>
+        <th>Department</th>
+        <th>Location</th>
+        <th>Status</th>
+        <th>Date Posted</th>
+        <th>Experience</th>
+        <th> </th>
+    </tr>
+
+    <tr *ngFor="let j of job">
+        <td>{{j.Job_id}}</td>
+        <td>{{j.Title}}</td>
+        <td>{{j.Department}}</td>
+        <td>{{j.Location}}</td>  
+        <td>{{j.Status}}</td>
+        <td>{{j.Date_posted}}</td>
+        <td>{{j.Experience}}</td>
+        <td>{{j.Blank}}</td>
+    </tr>
+</table>

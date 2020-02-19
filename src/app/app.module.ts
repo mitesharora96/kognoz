@@ -4,10 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {Nav} from './SideNav/nav.component';
+import {jobDescription} from './main/JobDescription/jobDescpirtion.component'
+import {employee360} from './main/JobDescription/Employee360/employee360.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,Nav,jobDescription,employee360
   ],
   imports: [
     BrowserModule,
