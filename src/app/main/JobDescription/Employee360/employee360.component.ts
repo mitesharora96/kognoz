@@ -8,6 +8,7 @@ import {Component} from "@angular/core"
 
 export class employee360{
 
+    dropdownValue:string='Select Department';
     employee:any[]=[
 
         {join_date:'25/10/2015',name:'Mitesh Arora',position:'Full Stack Developer',Department:'Wealth Management',Location:'Singapore'},
@@ -18,5 +19,12 @@ export class employee360{
         
         
         ];
+
+
+        OnDepratmentChange(value:string):void{
+
+            
+            console.log(this.dropdownValue);
+        }
 
 }

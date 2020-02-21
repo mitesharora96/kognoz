@@ -2,7 +2,8 @@
 
     <div class="empList">
         <ul>
-             <li *ngFor="let e of employee">
+            <ng-container *ngFor="let e of employee">
+             <li *ngIf="dropdownValue=='Select Department'||e.Department==dropdownValue">
                  
                         <h2>{{e.name}}</h2>
                         <h3>{{e.position}}</h3>
@@ -11,7 +12,7 @@
                         <p>Date of Joining: {{e.join_date}} </p>
                   
             </li>   
-
+            </ng-container>
         </ul>
 
 
@@ -19,7 +20,12 @@
     
     <div class="empFilter">
         <p>Select Department</p>
-        <input type="text" placeholder="All">
+        <select id='Department' [(ngModel)]=dropdownValue (change)='OnDepratmentChange($event)'>
+            <option value='Select Department'>Select Department</option>
+            <option value='Wealth Management'>Wealth Management</option>
+            <option value='Enterprise Management'>Enterprise Management</option>
+            <option value='others'>Others</option>
+        </select>
     </div>
 
 

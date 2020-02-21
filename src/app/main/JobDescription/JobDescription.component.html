@@ -1,3 +1,7 @@
+
+<div class='JobTable' *ngIf=TableView>
+Add Job <input type="submit" name='add_job' Value="+" (click)="OnAddJobClcik()">
+<br><hr><br>
 <table>
     <tr>
         <th>Job ID </th>
@@ -21,3 +25,24 @@
         <td>{{j.Blank}}</td>
     </tr>
 </table>
+
+</div>
+
+<div class='AddJobpage' *ngIf=AddJobView>
+    <h2>Please add your new Job Details</h2>
+    <br><br><br>
+
+        Job ID: <input type="number" placeholder="Job ID" [(ngModel)]=newJob.Job_id><br>
+        Title: <input type="text" placeholder="Title"  [(ngModel)]=newJob.Title><br>
+        Department: <input type="text" placeholder="Department"  [(ngModel)]=newJob.Department><br>
+        Location: <input type="text" placeholder="Location"  [(ngModel)]=newJob.Location><br>
+        Status: <input type="text" placeholder="Status"  [(ngModel)]=newJob.Status><br>
+        Date Posted: <input type="date" placeholder="Date"  [(ngModel)]=newJob.Date_posted><br>
+        Experience: <input type="text" placeholder="Experience"  [(ngModel)]=newJob.Experience>yrs <br><br>
+
+        <input type="button" Value="Submit Details" (click)="OnNewJobAdded()">
+
+
+
+
+</div>
